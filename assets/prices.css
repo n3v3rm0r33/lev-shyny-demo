@@ -131,6 +131,8 @@
   color: var(--muted);
 }
 .service-descriptions li {
+  display: flex;
+  flex-direction: column;
   padding: clamp(1.15rem, 2vw, 1.65rem);
   border: 1px solid var(--line);
   border-radius: 6px;
@@ -144,4 +146,11 @@
   line-height: 1.3;
 }
 .service-descriptions span { display: block; }
+.service-price {
+  margin-top: auto;
+  padding-top: 1rem;
+  color: var(--ink);
+  font-weight: 700;
+}
+.service-price a { text-decoration: underline; text-underline-offset: .2em; }
 .service-descriptions span::first-letter { text-transform: uppercase; }
