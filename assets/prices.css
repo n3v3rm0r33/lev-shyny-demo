@@ -121,3 +121,14 @@
   .rate-result, .other-rates { grid-template-columns: 1fr 1fr; }
   .rate-result { gap: 5%; }
 }
+.service-descriptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 32rem), 1fr));
+  gap: .75rem 2rem;
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+}
+.service-descriptions li { border-top: 1px solid var(--line); padding-top: .75rem; }
+.service-descriptions strong { color: var(--ink); }
